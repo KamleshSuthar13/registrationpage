@@ -1,0 +1,128 @@
+<html>
+<head>
+	<link href="bootstrap/bootstrap.min.css" rel="stylesheet"></link>
+	<link href="navbar.css" rel="stylesheet"></link>
+	<style>
+		.heading{
+		margin-bottom:25px;
+		}
+		.btn{
+		margin:8px;
+		}
+	</style>
+	<script>
+		function validate()
+    {
+        if(document.myForm.fname.value=="")
+        {
+            alert("Please Provide your Name!");
+            document.myForm.fname.focus();
+            return false;
+        }
+        if(document.myForm.email.value=="")
+        {
+            alert("Please provide your email in Proper manner!")
+            document.myForm.email.focus();
+            return false;
+        }
+		if(document.myForm.passwd.value=="")
+        {
+            alert("Please provide password!");
+            document.myForm.passwd.focus();
+            return false;
+        }
+    }
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div><a href="#">Registration</a></div>
+		</nav>
+	</header>
+	<div class="jumbotron"></div>
+	<h2 class="heading text-center">Registration</h2>
+	<form class="form-horizontal" name="myForm" onsubmit="return(validate());">
+	<div class="row">
+	<div class="form-group">
+	<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">First Name:</label>
+		<div class="col-sm-5">
+			<input class="form-control" type="text" name="fname" placeholder="Enter your first Name..."/></div>
+			<div class="col-sm-3"></div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">Last Name:</label>
+		<div class="col-sm-5">
+			<input class="form-control" type="text" name="lname" placeholder="Enter your last Name..."/></div>
+			<div class="col-sm-3"></div>
+	</div>
+<div class="form-group">
+		<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">Contact No.:</label>
+		<div class="col-sm-5">
+			<input class="form-control" type="text" name="contact"/></div>
+			<div class="col-sm-3"></div>
+</div>
+<div class="form-group">
+		<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">E-mail Id:</label>
+		<div class="col-sm-5">
+			<input class="form-control" type="email" name="email"/></div>
+			<div class="col-sm-3"></div>
+</div>
+<div class="form-group">
+		<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">Address:</label>
+		<div class="col-sm-5">
+			<textarea class="form-control" col="20" rows="4" name="address"></textarea></div>
+			<div class="col-sm-3"></div>
+	</div></div>
+	<div class="form-group">
+		<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">D.O.B.</label>
+		<div class="col-sm-5">
+			<input type="date" class="form-control" name="dob"/></div>
+			<div class="col-sm-3"></div>
+	</div></div>
+	<div class="form-group">
+		<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">Country:</label>
+		<div class="col-sm-5">
+			<select name="country">
+					<option>India</option>
+					<option>USA</option>
+					<option>Germany</option>
+					<option>Australia</option>
+					<option>china</option>
+					<option>Japan</option>
+					<option>South Korea</option>
+			</select></div>
+			<div class="col-sm-3"></div>
+	</div></div>
+	<div class="form-group">
+	<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">Password:</label>
+		<div class="col-sm-5">
+			<input class="form-control" type="text" name="passwd"/></div>
+			<div class="col-sm-3"></div>
+	</div>
+	<div class="form-group">
+	<div class="col-sm-2"></div>
+		<label class="control-label col-sm-2">Confirm Password:</label>
+		<div class="col-sm-5">
+			<input class="form-control" type="text" name="conpasswd"/></div>
+			<div class="col-sm-3"></div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4"><center>
+			<button type="submit" class="btn btn-success" name="submit">Submit</button>
+			<button type="reset" class="btn btn-danger" name="reset">Reset</button></center></div>
+			<div class="col-sm-4"></div>
+			</div>
+ </div></form>
+	<div class="footer text-center">Made by Kamlesh Suthar</div>
+</body>
+</html>
