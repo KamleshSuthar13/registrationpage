@@ -6,13 +6,6 @@ nav {
     margin-bottom: 10px;
     text-align: center;
 }
-.jumbotron {
-    background-image: url('images/banner3.png');
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-}
 nav a {
     color: black;
     padding: 8px;
